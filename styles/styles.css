@@ -41,8 +41,8 @@ html {
     bottom: -96vh;
     left: 0;
     z-index: -5;
-    border-bottom: 792px solid #f3f3f3;
-    border-right: 252px solid transparent;
+    border-bottom: 892px solid #f9f9f9;
+    border-right: 352px solid transparent;
   }
 
   div.corner-bottom-left2 {
@@ -51,7 +51,7 @@ html {
     bottom: -96vh;
     left: 0;
     z-index: -4;
-    border-bottom: 722px solid #f9f9f9;
+    border-bottom: 822px solid #f3f3f3;
     border-right: 202px solid transparent;
   }
 
@@ -228,6 +228,11 @@ img.projectlogo {
   width: 5rem;
   height: auto;
   margin-right: 5vh;
+  transition: transform .2s; /* Animation */
+}
+
+img.projectlogo:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 img.profilelogo {
