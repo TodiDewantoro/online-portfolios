@@ -7,13 +7,13 @@ html {
   scroll-behavior: smooth
 }
 
-/* navbar */
-div.container {
-  margin: 10vh;
-}
 
 /* main content */
 @media(min-width:1366px) and (orientation:landscape){
+
+  div.container {
+    margin: 10vh;
+  }
 
   div.corner-top-right {
     content: "";
@@ -38,21 +38,21 @@ div.container {
   div.corner-bottom-left {
     content: "";
     position: absolute;
-    bottom: -90vh;
+    bottom: -96vh;
     left: 0;
     z-index: -5;
-    border-bottom: 790px solid #f3f3f3;
-    border-right: 250px solid transparent;
+    border-bottom: 792px solid #f3f3f3;
+    border-right: 252px solid transparent;
   }
 
   div.corner-bottom-left2 {
     content: "";
     position: absolute;
-    bottom: -90vh;
+    bottom: -96vh;
     left: 0;
     z-index: -4;
-    border-bottom: 720px solid #f9f9f9;
-    border-right: 200px solid transparent;
+    border-bottom: 722px solid #f9f9f9;
+    border-right: 202px solid transparent;
   }
 
   header {
@@ -194,6 +194,7 @@ div.container-2-box h2{
 
 div.container-2-box p{
   color: #5E6A6E;
+  padding-left:2vh;
 }
 
 div.container.blue h3.touch {
@@ -240,7 +241,18 @@ img.profilelogo {
 
 h3.thick{
   color: #1098D4;
+  text-decoration: none;
   padding-bottom:1vh;
+  padding-left:2vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+div.projectslink {
+  margin: 5vh 2vh 2vh;
+  padding-left: 2vh
 }
 
 div.container.blue {
@@ -258,11 +270,16 @@ div.container.blue h3{
 
 div.container-2-box {
   line-height: 1.6;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 }
 
 
 @media(min-width:375px) and (orientation:portrait){
+
+  div.container {
+    margin: 5vh;
+  }
 
   div.corner-top-right {
     display: none;
@@ -287,8 +304,7 @@ div.container-2-box {
   div.flex-container {
     display: flex;
     flex-direction: row-reverse;
-    margin-right:28%;
-    margin-left:6%;
+    margin-right:33%;
   }
   
   ul {
@@ -315,6 +331,10 @@ div.container-2-box {
     padding: 1.2vh;
     color: #2a2a2a;
     border-color: #2a2a2a;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   .container-1{
@@ -440,6 +460,7 @@ img.profilelogo {
 h3.thick{
   color: #1098D4;
   padding-bottom:1vh;
+  padding-left:0vh;
 }
 
 div.container.blue {
@@ -458,6 +479,7 @@ div.container.blue h3{
 
 div.container-2-box {
   line-height: 1.6;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 div.box-2 h1 {
