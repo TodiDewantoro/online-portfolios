@@ -9,6 +9,8 @@ html {
 
 
 /* main content */
+
+/* desktop orientation */
 @media(min-width:1366px) and (orientation:landscape){
 
   /* div.container {
@@ -81,6 +83,8 @@ html {
   ul {
     list-style-type: none;
     margin-top: 0vh;
+    padding-inline-start: 0%;
+    margin-top: 8vh;
     text-align: center;
   }
   
@@ -300,12 +304,12 @@ div.container.carousel {
 }
 }
 
-
+/* iPhone 6 orientation */
 @media(min-width:375px) and (orientation:portrait){
 
-  div.container {
+  /* div.container {
     margin: 5vh;
-  }
+  } */
 
   div.corner-top-right {
     display: none;
@@ -336,6 +340,7 @@ div.container.carousel {
   ul {
     list-style-type: none;
     margin-top: 0vh;
+    padding-inline-start: 0%;
     text-align: center;
   }
   
@@ -533,11 +538,19 @@ div.container-fluid.blue h3.touch {
 }
 
 img.d-block.w-100.crsl {
-  height: 75vh;
+  height: 25vh;
   object-fit: cover;
 }
 
 div.container.carousel {
   margin-bottom: 8vh;
+}
+
+button.btn.btn-outline-info.btn-block.touch {
+  display:none
+}
+
+button.btn.btn-outline-info.btn-block.bio {
+  width:20vh
 }
 }
