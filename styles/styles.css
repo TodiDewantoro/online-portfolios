@@ -11,9 +11,9 @@ html {
 /* main content */
 @media(min-width:1366px) and (orientation:landscape){
 
-  div.container {
+  /* div.container {
     margin: 10vh;
-  }
+  } */
 
   div.corner-top-right {
     content: "";
@@ -45,10 +45,20 @@ html {
     border-right: 352px solid transparent;
   }
 
-  div.corner-bottom-left2 {
+  div.corner-bottom-left3 {
     content: "";
     position: absolute;
-    bottom: -96vh;
+    bottom: -210vh;
+    left: 0;
+    z-index: -7;
+    border-top: 892px solid #f9f9f9;
+    border-right: 352px solid transparent;
+  }
+
+  div.corner-bottom-left4 {
+    content: "";
+    position: absolute;
+    bottom: -208vh;
     left: 0;
     z-index: -4;
     border-bottom: 822px solid #f3f3f3;
@@ -62,6 +72,8 @@ html {
   div.flex-container {
     display: flex;
     flex-direction: row-reverse;
+    margin-top:5%;
+    margin-bottom:2%;
     margin-right:5%;
     margin-left:6%;
   }
@@ -197,7 +209,7 @@ div.container-2-box p{
   padding-left:2vh;
 }
 
-div.container.blue h3.touch {
+div.container-fluid.blue h3.touch {
     color: #5E6A6E;
 }
 
@@ -260,7 +272,7 @@ div.projectslink {
   padding-left: 2vh
 }
 
-div.container.blue {
+div.container-fluid.blue {
   text-align: center;
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255,255,255,0.5)), url('../assets/footer.jpg');
   height: 10vh;
@@ -269,13 +281,22 @@ div.container.blue {
   margin:0vh;
 }
 
-div.container.blue h3{
+div.container-fluid.blue h3{
   padding-top:1vh;
 }
 
 div.container-2-box {
   line-height: 1.6;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img.d-block.w-100.crsl {
+  height: 75vh;
+  object-fit: cover;
+}
+
+div.container.carousel {
+  margin-bottom: 8vh;
 }
 }
 
@@ -468,7 +489,7 @@ h3.thick{
   padding-left:0vh;
 }
 
-div.container.blue {
+div.container-fluid.blue {
   text-align: center;
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255,255,255,0.5)), url('../assets/footer.jpg');
   height: 10vh;
@@ -477,7 +498,7 @@ div.container.blue {
   margin:0vh;
 }
 
-div.container.blue h3{
+div.container-fluid.blue h3{
   padding-top:1vh;
   font-size: 1rem;
 }
@@ -507,7 +528,16 @@ div.container-2-box p{
   color: #5E6A6E;
 }
 
-div.container.blue h3.touch {
+div.container-fluid.blue h3.touch {
     color: #5E6A6E;
+}
+
+img.d-block.w-100.crsl {
+  height: 75vh;
+  object-fit: cover;
+}
+
+div.container.carousel {
+  margin-bottom: 8vh;
 }
 }
